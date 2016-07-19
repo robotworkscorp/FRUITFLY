@@ -1,0 +1,33 @@
+/**************************************************************************/
+/*!
+    Test code for MPL3115A2 altimeter sensor. It turns the LED on if
+    data is successfully received from the sensor.
+
+    v1.0 - First release
+*/
+/**************************************************************************/
+
+#include <Wire.h>
+	
+#define LED_PIN  13
+
+#define MPL3115A2_ADDRESS                       (0x60)
+#define MPL3115A2_WHOAMI                        (0x0C)
+
+
+void setup() {
+  Wire.begin();
+  Serial.begin(9600);
+  Serial.println("MPL3115A2 altimeter test!");
+
+  pinMode(LED_PIN, OUTPUT);
+}
+
+
+void loop() {
+  Wire.beginTransmission(MPL3115A2_ADDRESS);
+  Wire.write(MPL3115A2_WHOAM);
+  Wire.endTransmission(true);
+  
+  delay(250);
+}
