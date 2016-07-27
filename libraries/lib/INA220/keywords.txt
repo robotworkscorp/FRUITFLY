@@ -1,0 +1,23 @@
+#######################################
+# Syntax Coloring Map For RCraw Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+INA220	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	           KEYWORD2
+calibrate          KEYWORD2
+configure          KEYWORD2
+shuntVoltageRaw    KEYWORD2
+busVoltageRaw      KEYWORD2
+shuntVoltage       KEYWORD2
+busVoltage         KEYWORD2
+shuntCurrent       KEYWORD2
+busPower           KEYWORD2

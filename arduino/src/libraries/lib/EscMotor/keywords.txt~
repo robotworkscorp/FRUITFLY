@@ -1,0 +1,18 @@
+###########################################
+# Syntax Coloring Map For EscMotor Library
+###########################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ESCMotor	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+attachMotors	KEYWORD2
+detachMotors KEYWORD2
+armDrone KEYWORD2
+disarmDrone KEYWORD2

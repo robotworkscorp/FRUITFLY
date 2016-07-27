@@ -1,5 +1,5 @@
 /**********************************************
-* INA220 library example
+* INA219 library example
 * 10 May 2012 by johngineer
 *
 * this code is public domain.
@@ -15,14 +15,13 @@ INA220 monitor;
 void setup()
 {
   Serial.begin(9600);
-  monitor.begin(69);
+  monitor.begin(64);
   monitor.configure(1, 3, 3, 7);
   
   // test shunt = 115mm of 22AWG solid copper = 0.3 Ohms
-  // monitor.calibrate(0.3, 0.2, 6, 0.25);
+  monitor.calibrate(0.01, 0.2, 6, 0.25);
   
-  // newest shunt 1 milliomh 0.001
-  monitor.calibrate(0.001, 0.2, 6, 0.25);
+
 }
 
 void loop()

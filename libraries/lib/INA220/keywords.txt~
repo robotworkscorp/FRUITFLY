@@ -1,0 +1,18 @@
+#######################################
+# Syntax Coloring Map For RCraw Library
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+INA220	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+begin	    KEYWORD2
+calibrate   KEYWORD2
+configure   KEYWORD2
+
