@@ -1,0 +1,19 @@
+Revision History
+________________
+rev 1.3.3	06/10/15  : Added timeout for 2 sec from POR (according SSC7150 spec) before access MM7150 via i2c.
+			  : Added check/patch for HIDI2C_HOST_INT signal stuck low on POR.	
+
+		05/05/15  : Added calibration mode, FLASH configuration sector update, changed data rates = 10, compass sensitivity = 0.
+
+
+rev 1.3.2	02/06/15  : Added support for sleep/wake, vendor collections, flash update (requires SSC7150 F/W build 0800 or later). 
+                            Added HOST_SF_LIB_HID_Get_Report and HOST_SF_LIB_HID_Set_Report functions
+
+rev 1.3.1       09/30/14  : Enahanced error handling, i2c timer interrupt for non-responsive bus, SSC7150 F/W build 0700 support 
+
+rev 1.3.0	09/08/14  : Support for SSC7150 firmware build 0600, backward compatibility removed
+
+rev 1.2.1	08/29/14  : Support for SSC7150 firmware build 0600, with backward compatibility for F/W build 0411 
+				
+rev 1.2.0	08/21/14  : Initial release of SSC7150 Sensor Fusion Demo code using MCHP Explorer 16 development board with PIC24 as embedded host. 
+			    This version of sample code requires SSC7150 F/W build 0411.
